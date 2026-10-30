@@ -18,8 +18,9 @@
         <a href="#cardapio">Cardápio</a>
         <a href="#especiais">Especiais</a>
         <a href="#ambiente">Ambiente</a>
-        <a href="#horario">Horário</a>
+        <a href="#horario-funcionamento">Horário</a>
         <a href="#reserva">Reserva</a>
+        <a href="#delivery">Delivery</a>
         <a href="#contato">Contato</a>
     </nav> 
 
@@ -111,7 +112,7 @@
             <img src="imagens/cafeteria marrara.jpg" alt="Diversas xícaras e frascos em uma cafeteria">
         </section>
 
-        <section id="horario">
+        <section id="horario-funcionamento">
             <h2>Horário de funcionamento</h2>
             <table class="horario-funcionamento">
                 <thead>
@@ -140,26 +141,42 @@
         <section id="reserva">
             <h2>Reserve sua mesa</h2>
             <p>Preencha o formulário abaixo para fazer a reserva da sua mesa</p>
-            <form action="imagens/beomkyuta-cachorro-rindo.gif">
+            <form action="imagens/beomkyuta-cachorro-rindo.gif" target="_blank">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" placeholder="Seu nome completo">
 
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" placeholder="voce🫵@dominio.com">
 
-                <label for="nome">Número de pessoas:</label>
+                <label for="pessoas">Número de pessoas:</label>
                 <input type="number" id="pessoas" placeholder="Ex: 4">
 
-                <label for="nome">Observações:</label>
+                <label for="observacoes">Observações:</label>
                 <textarea id="obs" rows="3" placeholder="Horário desejado, aniversário, etc"></textarea>
 
                 <button type="submit">Reservar</button>
             </form>
         </section>
+
+        <section id="delivery">
+            <h2>Peça pelo delivery</h2>
+            <p>Não consegue retirar seu pedido? Receba seu café favorito em casa.</p>
+            <a href="https://api.whatsapp.com/send/?phone=5519986030139" target="_blank" class="botao">Pedir pelo WhatsApp</a>
+        </section>
+
+        <section id="contato">
+            <h2>Contanto</h2>
+            <p>Fale com a gente pelos canais abaixo:</p>
+            <ul>
+                <li>E-mail: <a href="mailto:contato@cafeteria.com">contato@cafeteria.com</a></li>
+                <li>Telefone: (19) 99999-9999</li>
+                <li>Instagram: <a href="https://instagram.com/lucas.m.francisco905" target="_blank">@cafeteria</a></li>
+            </ul>
+        </section>
     </main>
     
     <aside>
-        <img src="imagens/beomkyuta-cachorro-rindo.gif" alt="" id="contato" class="wainu">
+        <img src="imagens/beomkyuta-cachorro-rindo.gif" alt="" id="wainu" class="wainu">
     </aside>
     <!-- 
     <nav>

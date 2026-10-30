@@ -25,6 +25,8 @@
     --cor-texto: #333333;
     --cor-texto-creme: #e6d7c3;
     --cor-marrom-hover: #935f3a;
+
+    --botao-clique-bezier: cubic-bezier(0,2.75,1,.51);
 }
 
 /* Regra de Formatação ╰(*°▽°*)╯ */
@@ -94,9 +96,6 @@ section hr {
 section img {
     width: 100%;
 }
-.horario-funcionamento {
-
-}
 /* Criar um classe em CSS */
 
 .dica{
@@ -158,9 +157,48 @@ form button {
     padding: 12px 24px;
     border-radius: 6px;
     cursor: pointer;
+    transition: 0.2s;
 }
 form button:hover {
+    transform: translateY(-2px) scale(1.05); 
     background-color: var(--cor-marrom-hover);
+}
+form button:active {
+    transition: .3s var(--botao-clique-bezier);
+    transform: translateY(2px) scale(.95);
+}
+
+/* Formatação de seção delivery usando o ID */
+
+#delivery {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(120deg, var(--cor-marrom-escuro), var(--cor-marrom-medio));
+    color: white;
+}
+#delivery h2 {
+    margin-bottom: 10px;
+    border-bottom: none;
+    font-size: 20px;
+    color: var(--cor-branco);
+}
+.botao {
+    background-color: var(--cor-branco);
+    color: var(--cor-marrom-escuro);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+    display: inline-block; /* Combina o comportamento inline com block*/
+    transition: 0.2s;
+}
+.botao:hover {
+    transform: translateY(-2px) scale(1.05);
+    background-color: var(--cor-texto-creme);
+}
+.botao:active {
+    transition: .3s var(--botao-clique-bezier);
+    transform: translateY(2px) scale(.95);
+    background-color: var(--cor-texto-creme);
 }
 
 /* Formatação de tabela */
