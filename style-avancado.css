@@ -2,6 +2,8 @@
     --cor-fundo-experiencia: #faf6f0;
     --cor-fundo-etiqueta: #e53935;
     --cor-fundo-vegano: #2e7d32;
+    --cor-fundo-depoimento: #faf6f0;
+    --cor-fundo-2-depoimento: #e8d3bd;
 }
 
 /* Cabeçalho animado */
@@ -155,6 +157,80 @@
 
 .foto:hover figcaption {
     transform: translate(0);
+}
+
+/* Formatação de vídeo no Youtube */
+
+.video-youtube {
+    aspect-ratio: 16 / 9;
+    margin-bottom: 10px;
+}
+.video-youtube iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Formatação da equipe */
+
+.equipe {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.membro {
+    text-align: center;
+    width: 150px;
+}
+.membro img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/* Formatação dos depoimentos */
+
+.depoimentos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.depoimento {
+    position: relative;
+    background-color: var(--cor-fundo-depoimento);
+    border-radius: 10px;
+    padding: 35px 20px 20px;
+}
+/*
+nth-child() identifica elementos em uma lista de filhos
+even: aplica aos elementos par
+odd: aplica aos elementos filhos
+*/
+.depoimento:nth-child(even) {
+    background-color: var(--cor-fundo-2-depoimento);
+}
+.depoimento::before {
+    content: "\F6B0";
+    position: absolute;
+    top: 0;
+    left: 14px;
+    font-family: "bootstrap-icons";
+    font-size: 2.4rem;
+    color: var(--cor-marrom-medio);
+    line-height: 1;
+}
+cite {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--cor-marrom-medio);
+}
+footer {
+    background-color: var(--cor-marrom-medio);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 0.9rem;
+    margin-top: 10px;
 }
 
 /* Regras para layout responsivo */
